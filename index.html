@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="post.js"></script>
+    <script src="get.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1>Declare!</h1>
+        </div>
+        <!--<div class="header-right">
+            <a href="#dropdown-test">Dropdown</a>
+            <div class="dropdown">
+            <button class="tab dropbtn">More</button>
+            <div class="tab dropdown-content">
+                <a href="#tab-test">Tab</a>
+                <a href="#">Link2</a>
+                <a href="#">Link3</a>
+            </div>
+            </div>
+        </div>-->
+
+    </header>
+    <div class="container top-most">
+    <div class="new-declaration">
+        <h2>New Declaration</h2>
+        <div class="time">
+            <label for="name" id="time_label">Duration</label><br>
+            <input type="number" class="time pure-num" id="hour" value="00" min="0" max="99" step="1"><p class="colon">:</p><input type="number" class="time pure-num" id="minute" value="00" min=0 max="59"><p class="colon">:</p><input type="number" class="time pure-num" id="second" value="00" min="0" max="59">
+        </div>
+        <div class="title">
+            <label for="name" id="title_label">Title</label><br>
+            <input type="text" id="title">
+        </div>
+        <div class="detail">
+            <label for="name" id="details_label">Details</label><br>
+            <textarea class="details"></textarea>
+        </div>
+        <button class="declare" onclick="onDeclare();">Declare!</button>
+        <p class="declare-margin"></p>
+    </div>
+    </div>
+    <div id="declare-items">
+    <div class="container">
+    <div class="declare-item">
+        <h2 class="declare-item-">Design new declaration</h2>
+        <h3 class="time display using">00:00:00</h3>
+        <div class="progress"><div class="progress child"></div></div>
+        <p class="details display">I will make stracture with HTML and design with HTML. After that, I want to eat pudding</p>
+    </div>
+    </div>
+    <div class="container">
+    <div class="declare-item review">
+        <h2 class="declare-item-">Design new declaration</h2>
+        <h3 class="time display using">00:00:00</h3>
+        <div class="progress"></div>
+        <p class="details display">I will make stracture with HTML and design with HTML. After that, I want to eat pudding</p>
+        <textarea class="review"></textarea>
+        <button class="review" onclick="onReview();">Review!</button>
+        <p class="declare-margin"></p>
+    </div>
+    </div>
+    <div class="container">
+    <div class="declare-item fin">
+        <h2 class="declare-item-">Design new declaration</h2>
+        <h3 class="time display">00:00:00</h3>
+        <div class="progress"><div class="progress child"></div></div>
+        <p class="details display">I will make stracture with HTML and design with HTML. After that, I want to eat pudding</p>
+        <p class="review display">I will make stracture with HTML and design with HTML. After that, I want to eat pudding</p>
+    </div>
+    </div>
+    </div>
+    <p id="comments"></p>
+    <footer>
+        <script src="time-format.js"></script>
+    </footer>
+</body>
+</html>
